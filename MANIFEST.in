@@ -1,0 +1,6 @@
+include LICENSE
+include license_AGPL.txt
+include license_COMMERCIAL.txt
+include README.md
+recursive-include examples *.py
+recursive-include tests *.py

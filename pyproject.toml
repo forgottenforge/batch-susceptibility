@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "batch-susceptibility"
+version = "1.0.0"
+description = "Model-free optimal batch size finder using susceptibility analysis"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Matthias C. Wurm", email = "nfo@forgottenforge.xyz"},
+]
+keywords = [
+    "machine-learning", "batch-size", "hyperparameter-optimization",
+    "susceptibility", "critical-scale", "deep-learning",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+pytorch = ["torch>=1.9"]
+tensorflow = ["tensorflow>=2.6"]
+lightning = ["torch>=1.9", "pytorch-lightning>=1.5"]
+plot = ["matplotlib>=3.4"]
+all = [
+    "torch>=1.9",
+    "tensorflow>=2.6",
+    "pytorch-lightning>=1.5",
+    "matplotlib>=3.4",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+batch-susceptibility = "batch_susceptibility.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/forgottenforge/batch-susceptibility"
+Documentation = "https://github.com/forgottenforge/batch-susceptibility#readme"
+Repository = "https://github.com/forgottenforge/batch-susceptibility"
+Issues = "https://github.com/forgottenforge/batch-susceptibility/issues"
+
+[tool.setuptools.packages.find]
+include = ["batch_susceptibility*"]
