@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2025 ForgottenForge.xyz
-# Licensed under AGPL-3.0-or-later. See LICENSE.txt for details.
+# Licensed under AGPL-3.0-or-later. See LICENSE for details.
 # Commercial license available: nfo@forgottenforge.xyz
 """Example: Analyze any time series from a CSV file.
 

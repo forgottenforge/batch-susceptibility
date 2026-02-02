@@ -281,7 +281,7 @@ This connects to the *critical batch size* concept from [McCandlish et al. (2018
 - **AGPL-3.0** for open-source / non-commercial use ([license_AGPL.txt](license_AGPL.txt))
 - **Commercial license** for proprietary integration ([license_COMMERCIAL.txt](license_COMMERCIAL.txt))
 
-See [LICENSE.txt](LICENSE.txt) for full details.
+See [LICENSE](LICENSE) for full details.
 
 For commercial licensing, contact: **nfo@forgottenforge.xyz**
 

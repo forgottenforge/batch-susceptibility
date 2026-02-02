@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "batch-susceptibility"
-version = "1.0.0"
+version = "1.0.1"
 description = "Model-free optimal batch size finder using susceptibility analysis"
 readme = "README.md"
-license = {file = "LICENSE.txt"}
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE", "license_AGPL.txt", "license_COMMERCIAL.txt"]
 requires-python = ">=3.8"
 authors = [
     {name = "Matthias C. Wurm", email = "nfo@forgottenforge.xyz"},
@@ -20,13 +21,13 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]

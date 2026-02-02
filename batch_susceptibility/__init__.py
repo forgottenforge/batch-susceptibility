@@ -1,5 +1,5 @@
 # Copyright (c) ForgottenForge.xyz
-# Licensed under AGPL-3.0-or-later. See LICENSE.txt for details.
+# Licensed under AGPL-3.0-or-later. See LICENSE for details.
 # Commercial license available: nfo@forgottenforge.xyz
 """Batch Susceptibility: Model-free optimal batch size finder.
 
@@ -17,7 +17,7 @@ Example:
     >>> print(f"Optimal batch size: {result.K_c}")
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .core import BatchSusceptibility, SusceptibilityResult
 from .core import susceptibility_from_losses, susceptibility_from_sweep
